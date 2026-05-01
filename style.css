@@ -5,7 +5,32 @@ body {
     padding: 20px;
     margin: 0;
 }
+.project-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
 
+.project-card {
+    background: #f9f9f9;
+    border-radius: 12px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-top: 5px solid #007bff; /* A nice blue accent */
+    text-align: left;
+}
+
+.status-tag {
+    background: #fff3cd;
+    color: #856404;
+    padding: 4px 8px;
+    font-size: 0.8rem;
+    border-radius: 5px;
+    font-weight: bold;
+}
 .container {
     max-width: 600px; /* This keeps the website narrow and centered */
     margin: 0 auto; 
