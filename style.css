@@ -23,13 +23,17 @@ header {
 }
 
 .profile-img {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
+    width: 120px;          /* This sets the width */
+    height: 120px;         /* This sets the height */
+    border-radius: 50%;    /* This makes it a circle */
     border: 3px solid #007bff;
-    object-fit: cover;
+    object-fit: cover;     /* This prevents the photo from looking "stretched" */
     margin-bottom: 15px;
+    display: block;        /* Ensures it behaves correctly in the container */
+    margin-left: auto;     /* Centers it */
+    margin-right: auto;    /* Centers it */
 }
+
 
 h1 {
     font-size: 2.2rem;
