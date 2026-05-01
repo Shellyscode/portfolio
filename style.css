@@ -1,63 +1,148 @@
-/* Shelly's Professional Portfolio Style */
+/* Shelly Singh - Professional Portfolio Stylesheet */
+
+/* General Reset and Body */
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #eef2f3; 
-    padding: 20px;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #f4f7f9;
+    color: #333;
+    line-height: 1.6;
     margin: 0;
+    padding: 40px 20px;
 }
 
+/* Main Container */
 .container {
-    max-width: 600px; 
-    margin: 0 auto; 
+    max-width: 800px; /* Balanced width for both web and PDF */
+    margin: 0 auto;
     text-align: center;
 }
 
-/* Profile Photo */
+/* Header Section */
+header {
+    margin-bottom: 30px;
+}
+
 .profile-img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%; 
-    border: 4px solid #007bff;
-    margin-bottom: 20px;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid #007bff;
     object-fit: cover;
+    margin-bottom: 15px;
+}
+
+h1 {
+    font-size: 2.2rem;
+    margin: 0;
+    color: #1a1a1a;
+}
+
+header p {
+    font-size: 1.1rem;
+    color: #666;
+    margin-top: 5px;
 }
 
 /* Card Styling */
 .card {
-    background-color: white;
-    border: 1px solid #d1d8e0;
-    border-radius: 12px;
+    background-color: #ffffff;
+    border: 1px solid #e0e6ed;
+    border-radius: 8px;
     padding: 25px;
-    margin: 20px 0;
+    margin-bottom: 20px;
     text-align: left;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-    border-top: 5px solid #007bff; /* Adds the professional blue line */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    border-top: 4px solid #007bff;
 }
 
-/* Project Status Tag */
+/* Typography */
+h2 {
+    font-size: 1.4rem;
+    color: #007bff;
+    margin-top: 0;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 8px;
+}
+
+h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* List Styling */
+ul {
+    padding-left: 20px;
+    margin: 10px 0;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+/* Project Specific Styles */
+.project-item {
+    margin-bottom: 25px;
+}
+
 .status-tag {
-    background: #fff3cd;
-    color: #856404;
-    padding: 4px 8px;
+    background: #e1f5fe;
+    color: #01579b;
+    padding: 4px 12px;
     font-size: 0.8rem;
-    border-radius: 5px;
-    font-weight: bold;
+    border-radius: 4px;
+    font-weight: 600;
     display: inline-block;
     margin-top: 10px;
 }
 
-h1 { color: #333; }
-h2 { color: #007bff; margin-top: 0; border-bottom: 1px solid #eee; padding-bottom: 10px; }
-h3 { margin-top: 0; }
+/* Links */
+a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: 600;
+}
 
-ul { padding-left: 20px; }
-li { margin-bottom: 10px; color: #444; line-height: 1.5; }
+a:hover {
+    text-decoration: underline;
+}
 
-a { color: #007bff; text-decoration: none; font-weight: bold; }
-a:hover { text-decoration: underline; }
+/* Horizontal Rule */
+hr {
+    border: 0;
+    border-top: 1px solid #eee;
+    margin: 20px 0;
+}
 
+/* Contact Info Styling */
+.card p strong {
+    color: #555;
+    width: 120px;
+    display: inline-block;
+}
+
+/* Footer */
 footer {
     margin-top: 40px;
-    padding-bottom: 40px;
-    color: #777;
+    font-size: 0.9rem;
+    color: #888;
+}
+
+/* Print Optimization (For your PDF) */
+@media print {
+    body {
+        background-color: #ffffff;
+        padding: 0;
+    }
+    .container {
+        max-width: 100%;
+    }
+    .card {
+        box-shadow: none;
+        border: 1px solid #ccc;
+        page-break-inside: avoid; /* Prevents cards from splitting across pages */
+    }
 }
