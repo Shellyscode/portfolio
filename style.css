@@ -1,43 +1,18 @@
-/* Shelly's Vertical Portfolio Style */
+/* Shelly's Professional Portfolio Style */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #eef2f3; 
     padding: 20px;
     margin: 0;
 }
-.project-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-    padding: 20px;
-}
 
-.project-card {
-    background: #f9f9f9;
-    border-radius: 12px;
-    padding: 20px;
-    width: 300px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    border-top: 5px solid #007bff; /* A nice blue accent */
-    text-align: left;
-}
-
-.status-tag {
-    background: #fff3cd;
-    color: #856404;
-    padding: 4px 8px;
-    font-size: 0.8rem;
-    border-radius: 5px;
-    font-weight: bold;
-}
 .container {
-    max-width: 600px; /* This keeps the website narrow and centered */
+    max-width: 600px; 
     margin: 0 auto; 
     text-align: center;
 }
 
-/* My Profile Photo */
+/* Profile Photo */
 .profile-img {
     width: 150px;
     height: 150px;
@@ -47,22 +22,42 @@ body {
     object-fit: cover;
 }
 
-/* Card Styling - This makes them stack vertically */
+/* Card Styling */
 .card {
     background-color: white;
-    border: 2px solid #d1d8e0;
+    border: 1px solid #d1d8e0;
     border-radius: 12px;
     padding: 25px;
-    margin: 20px 0; /* Adds space above and below each card */
-    text-align: left; /* Aligns text inside cards to the left */
+    margin: 20px 0;
+    text-align: left;
     box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    border-top: 5px solid #007bff; /* Adds the professional blue line */
+}
+
+/* Project Status Tag */
+.status-tag {
+    background: #fff3cd;
+    color: #856404;
+    padding: 4px 8px;
+    font-size: 0.8rem;
+    border-radius: 5px;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 10px;
 }
 
 h1 { color: #333; }
 h2 { color: #007bff; margin-top: 0; border-bottom: 1px solid #eee; padding-bottom: 10px; }
+h3 { margin-top: 0; }
 
 ul { padding-left: 20px; }
 li { margin-bottom: 10px; color: #444; line-height: 1.5; }
 
 a { color: #007bff; text-decoration: none; font-weight: bold; }
 a:hover { text-decoration: underline; }
+
+footer {
+    margin-top: 40px;
+    padding-bottom: 40px;
+    color: #777;
+}
