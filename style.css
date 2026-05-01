@@ -1,152 +1,98 @@
 /* Shelly Singh - Professional Portfolio Stylesheet */
 
-/* General Reset and Body */
 body {
     font-family: 'Segoe UI', Arial, sans-serif;
-    background-color: #f4f7f9;
+    background-color: #f5f7f9;
     color: #333;
-    line-height: 1.6;
+    line-height: 1.5;
     margin: 0;
-    padding: 40px 20px;
+    padding: 20px;
 }
 
-/* Main Container */
 .container {
-    max-width: 800px; /* Balanced width for both web and PDF */
+    max-width: 650px; /* Narrower for better PDF layout */
     margin: 0 auto;
-    text-align: center;
 }
 
-/* Header Section */
 header {
-    margin-bottom: 30px;
-}
-
-.profile-img {
-    width: 120px;          /* This sets the width */
-    height: 120px;         /* This sets the height */
-    border-radius: 50%;    /* This makes it a circle */
-    border: 3px solid #007bff;
-    object-fit: cover;     /* This prevents the photo from looking "stretched" */
-    margin-bottom: 15px;
-    display: block;        /* Ensures it behaves correctly in the container */
-    margin-left: auto;     /* Centers it */
-    margin-right: auto;    /* Centers it */
-}
-
-
-h1 {
-    font-size: 2.2rem;
-    margin: 0;
-    color: #1a1a1a;
-}
-
-header p {
-    font-size: 1.1rem;
-    color: #666;
-    margin-top: 5px;
-}
-
-/* Card Styling */
-.card {
-    background-color: #ffffff;
-    border: 1px solid #e0e6ed;
-    border-radius: 8px;
-    padding: 25px;
-    margin-bottom: 20px;
-    text-align: left;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-    border-top: 4px solid #007bff;
-}
-
-/* Typography */
-h2 {
-    font-size: 1.4rem;
-    color: #007bff;
-    margin-top: 0;
-    margin-bottom: 15px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    border-bottom: 1px solid #eee;
-    padding-bottom: 8px;
-}
-
-h3 {
-    font-size: 1.2rem;
-    margin-bottom: 10px;
-    color: #333;
-}
-
-/* List Styling */
-ul {
-    padding-left: 20px;
-    margin: 10px 0;
-}
-
-li {
-    margin-bottom: 8px;
-}
-
-/* Project Specific Styles */
-.project-item {
+    text-align: center;
     margin-bottom: 25px;
 }
 
+/* Constrains giant image files to professional size */
+.profile-img {
+    width: 125px;
+    height: 125px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #007bff;
+    margin-bottom: 10px;
+}
+
+h1 { 
+    margin: 5px 0; 
+    font-size: 1.7rem; 
+    letter-spacing: -0.5px;
+}
+
+h2 { 
+    color: #007bff; 
+    font-size: 1.1rem; 
+    text-transform: uppercase;
+    border-bottom: 2px solid #007bff; 
+    padding-bottom: 5px; 
+    margin-top: 0;
+}
+
+h3 { 
+    font-size: 1rem; 
+    margin: 0 0 5px 0; 
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+}
+
+ul { 
+    padding-left: 18px; 
+    margin: 5px 0; 
+}
+
+li { 
+    margin-bottom: 4px; 
+}
+
 .status-tag {
-    background: #e1f5fe;
-    color: #01579b;
-    padding: 4px 12px;
-    font-size: 0.8rem;
-    border-radius: 4px;
-    font-weight: 600;
-    display: inline-block;
-    margin-top: 10px;
-}
-
-/* Links */
-a {
+    background: #e7f3ff;
     color: #007bff;
-    text-decoration: none;
-    font-weight: 600;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-/* Horizontal Rule */
-hr {
-    border: 0;
-    border-top: 1px solid #eee;
-    margin: 20px 0;
-}
-
-/* Contact Info Styling */
-.card p strong {
-    color: #555;
-    width: 120px;
+    font-size: 0.7rem;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-weight: bold;
     display: inline-block;
 }
 
-/* Footer */
-footer {
-    margin-top: 40px;
-    font-size: 0.9rem;
-    color: #888;
+a { 
+    color: #007bff; 
+    text-decoration: none; 
+    font-weight: 600; 
+    font-size: 0.9rem; 
 }
 
-/* Print Optimization (For your PDF) */
+footer { 
+    text-align: center; 
+    font-size: 0.75rem; 
+    color: #888; 
+    margin-top: 30px; 
+}
+
+/* PDF Print Optimization */
 @media print {
-    body {
-        background-color: #ffffff;
-        padding: 0;
-    }
-    .container {
-        max-width: 100%;
-    }
-    .card {
-        box-shadow: none;
-        border: 1px solid #ccc;
-        page-break-inside: avoid; /* Prevents cards from splitting across pages */
-    }
+    body { padding: 0; background-color: white; }
+    .container { max-width: 100%; }
+    .card { box-shadow: none; border: 1px solid #eee; page-break-inside: avoid; }
 }
